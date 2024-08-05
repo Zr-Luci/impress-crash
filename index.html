@@ -1,32 +1,75 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Love You Beb💕</title>
-  <link rel="stylesheet" href="./style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love You Beb 💕</title></title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #D2D2D2;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(images/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div id="drag-container">
-  <div id="spin-container">
-
-    <img src="./BABU/BABU1.jpg" alt="">
-    <img src="./BABU/BABU2.jpg" alt="">
-    <img src="./BABU/BABU3.jpg" alt="">
-    <img src="./BABU/BABU4.jpg" alt="">
-    <img src="./BABU/BABU5.jpg" alt="">
-    <img src="./BABU/BABU6.jpg" alt="">
-    <img src="./BABU/BABU7.jpg" alt="">
- 
-    <p>Are you a Netflix show? Because I want to binge watch you all night.</p>
-  </div>
-  <div id="ground"></div>
-</div>
-
-<div id="music-container"></div>
-<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
-
-  <script  src="./script.js"></script>
-
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="images/dragon_1.jpg" alt=""></div>
+            <div class="item" style="--position: 2"><img src="images/dragon_2.jpg" alt=""></div>
+            <div class="item" style="--position: 3"><img src="images/dragon_3.jpg" alt=""></div>
+            <div class="item" style="--position: 4"><img src="images/dragon_4.jpg" alt=""></div>
+            <div class="item" style="--position: 5"><img src="images/dragon_5.jpg" alt=""></div>
+            <div class="item" style="--position: 6"><img src="images/dragon_6.jpg" alt=""></div>
+            <div class="item" style="--position: 7"><img src="images/dragon_7.jpg" alt=""></div>
+            <div class="item" style="--position: 8"><img src="images/dragon_8.jpg" alt=""></div>
+            <div class="item" style="--position: 9"><img src="images/dragon_9.jpg" alt=""></div>
+            <div class="item" style="--position: 10"><img src="images/dragon_10.jpg" alt=""></div>
+        </div>
+        <div class="content">
+            <h1 data-content="ONLY FOR YOU BEB">
+                ONLY FOR YOU BEBY
+            </h1>
+            <div class="author">
+                <h2></h2>
+                <p><b>FOME YOUR HEART 💜</b></p>
+                <p>
+                  Are you a Netflix show? Because I want to binge watch you all night.
+                </p>
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>
+    
 </body>
+</html>
