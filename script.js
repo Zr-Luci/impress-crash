@@ -4,7 +4,7 @@ var rotateSpeed = -60;
 var imgWidth = 120; 
 var imgHeight = 170; 
 
-var bgMusicURL = 'https://user-images.githubusercontent.com/151072490/283747943-7b08424b-8647-4bdc-996c-965063dbb5e3.mp4';
+var bgMusicURL = '';
 var bgMusicControls = true; 
 
 setTimeout(init, 1000);
@@ -55,7 +55,7 @@ if (autoRotate) {
 
 if (bgMusicURL) {
   document.getElementById('music-container').innerHTML += `
-<audio src="${bgMusicURL}" ${bgMusicControls? 'controls': 'true'} autoplay loop>    
+<audio src="${bgMusicURL}" ${bgMusicControls? 'controls': ''} autoplay loop>    
 <p>If you are reading this, it is because your browser does not support the audio element.</p>
 </audio>
 `;
